@@ -1,10 +1,10 @@
-<app-header></app-header>
+<app-header (caracteristicaSeleccionada)="onNavigate($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-12">
-        <h1>Hola</h1>
-        <app-recipes></app-recipes>
-        <app-shopping-list></app-shopping-list>
+      <h1>Mi Sistema</h1>
+        <app-recipes *ngIf="caracteristicaCargada === 'receta'"></app-recipes>
+        <app-shopping-list *ngIf="caracteristicaCargada === 'lista-compra'"></app-shopping-list>
     </div>
   </div>
 </div>

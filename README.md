@@ -2,6 +2,29 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+#Notes about developer
+using bootstrap 4 
+visual code with plugins for angular and typescript
+Using angular CLi with angular-cli.json modify to override default options
+
+#Notes about components
+- Input For comunication between components you can use @Input('Alias outside con').
+- Output is to eject events, this event can be listener for any component
+- Local References #idvalue only work in template, you an't reference this in .ts
+- ViewChild you can get acces to a element in your component.html and get dom value
+
+//viewchild and ng-content need learn
+
+lifecicle of angular
+- ngOnChanges
+- ngOnInit after the constructor
+- ngDoCheck
+- ngAfterContentInit
+- ngAfterContentChecked
+- ngAfterViewInit
+- ngAfterViewChecked
+- ngOnDestroy
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

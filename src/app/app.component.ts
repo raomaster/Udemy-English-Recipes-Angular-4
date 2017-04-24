@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  caracteristicaCargada = 'receta';
+
+  onNavigate(caracteristica: string) {
+    this.caracteristicaCargada = caracteristica;
+  }
 }
