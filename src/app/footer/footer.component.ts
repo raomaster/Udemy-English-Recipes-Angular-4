@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   year: number;
   constructor() {
-    this.year = 2017;
+    this.year = new Date().getFullYear();
   }
 }
